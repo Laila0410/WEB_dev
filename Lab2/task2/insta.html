@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <!-- ОСНОВНОЙ КОНТЕЙНЕР -->
+  <div class="page">
+    
+    <!-- ЛЕВАЯ КОЛОНКА С КАРТИНКАМИ -->
+    <div class="preview">
+      <img src="IG.jpeg" class="img floating">
+    </div>
+    
+    <!-- ПРАВАЯ КОЛОНКА С ФОРМОЙ -->
+    <div class="login">
+      <!-- ЛОГОТИП -->
+      <img src="instaLogo.png" class="logo">
+      
+      <!-- ПОЛЯ ВВОДА -->
+      <input type="text" placeholder="Телефон, имя пользователя или эл. адрес">
+      
+      <!-- ПОЛЕ ПАРОЛЯ С КНОПКОЙ ПОКАЗАТЬ/СКРЫТЬ -->
+      <div class="password-container">
+        <input type="password" id="password" placeholder="Пароль">
+        <button type="button" class="toggle-password" id="togglePassword">
+          Показать
+        </button>
+      </div>
+      
+      <!-- КНОПКА ВХОДА -->
+      <button class="btn">Войти</button>
+      
+      <!-- РАЗДЕЛИТЕЛЬ -->
+      <div class="or">
+        <span></span>
+        <p>ИЛИ</p>
+        <span></span>
+      </div>
+      
+      <!-- ССЫЛКИ -->
+      <a href="#" class="fb">Войти через Facebook</a>
+      <a href="#" class="forgot">Забыли пароль?</a>
+      
+      <!-- РЕГИСТРАЦИЯ -->
+      <div class="signup">
+        <p>У вас нет аккаунта? <a href="#">Зарегистрироваться</a></p>
+      </div>
+      
+      <!-- СКАЧАТЬ ПРИЛОЖЕНИЕ -->
+      <p class="apps-text">Установите приложение.</p>
+      
+      <!-- КНОПКИ СКАЧИВАНИЯ -->
+      <div class="apps">
+        <button class ="ppp">
+         <a href ="https://apps.apple.com/ru/app/instagram/id389801252"> <img src="app_store.jpg" alt="App Store"> </a>
+
+          
+        </button>
+        <button class="ppp">
+          <a href ="https://play.google.com/store/apps/details?id=com.instagram.android&hl=ru"><img src="google_play.jpg" alt="Google Play"></a>
+        </button>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- ФУТЕР -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="https://about.meta.com/">Meta</a>
+        <a href="https://about.instagram.com/">Информация</a>
+        <a href="https://about.instagram.com/blog/">Блог</a>
+        <a href="https://www.instagram.com/about/jobs/">Вакансии</a>
+        <a href="https://help.instagram.com/">Помощь</a>
+        <a href="https://developers.facebook.com/docs/instagram">API</a>
+        <a href="https://www.instagram.com/legal/privacy/">Конфиденциальность</a>
+        <a href="https://www.instagram.com/legal/terms/">Условия</a>
+        <a href="https://www.instagram.com/explore/locations/">Места</a>
+        <a href="https://www.instagram.com/download/">Instagram Lite</a>
+        <a href="https://about.meta.com/metai/">Meta AI</a>
+        <a href="https://www.threads.net/">Threads</a>
+        <a href="https://www.instagram.com/legal/privacy/#:~:text=Загрузка%20контактов%20и%20лица%2C%20не%20являющиеся%20пользователями">Загрузка контактов</a>
+        <a href="https://www.instagram.com/accounts/emailsignup/">Meta Verified</a>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="language-selector">
+          <select>
+            <option value="ru">Русский</option>
+            <option value="en">English</option>
+            <option value="kz">Қазақша</option>
+          </select>
+        </div>
+        <div class="copyright">
+          © 2026 Instagram from Meta
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Функция для показа/скрытия пароля
+    const togglePassword = document.getElementById('togglePassword');
+    const password = document.getElementById('password');
+    
+    togglePassword.addEventListener('click', function() {
+      // Меняем тип поля ввода
+      const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+      password.setAttribute('type', type);
+      
+      // Меняем текст кнопки
+      this.textContent = type === 'password' ? 'Показать' : 'Скрыть';
+    });
+  </script>
+
+</body>
+</html>

@@ -115,13 +115,6 @@ body {
 .forgot-link:hover {
     text-decoration: underline;
 }
-
-.divider {
-    height: 1px;
-    background-color: #dadde1;
-    margin: 20px 0;
-}
-
 .create-account-button {
     background-color: #42b72a;
     border: none;
