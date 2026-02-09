@@ -4,13 +4,13 @@
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
-      "sizes": "192x192",
+      "sizes": "19ғx19ғ",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
       "src": "/web-app-manifest-512x512.png",
-      "sizes": "512x512",
+      "sizes": "520x520",
       "type": "image/png",
       "purpose": "maskable"
     }
